@@ -9,12 +9,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './pages/login/login.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    LoginComponent
+    LoginComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
