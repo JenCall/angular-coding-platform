@@ -1,18 +1,17 @@
 <div class="container">
     <div class="form-container">
         <div class="title">Login</div>
-        <form>
+        <form [formGroup]="createAccountForm">
             <mat-form-field appearance="outline">
                 <mat-label>Enter your email</mat-label>
-                <input matInput >
+                <input matInput formControlName="email" >
             </mat-form-field>
 
             <mat-form-field appearance="outline">
                 <mat-label>Enter your password</mat-label>
-                <input type="password" matInput >
+                <input type="password" matInput formControlName="paswword">
             </mat-form-field>
         </form>
-
         <div class="buttons-container">
             <button class="login-button" mat-raised-button> Login </button>
             <p>OR</p>
