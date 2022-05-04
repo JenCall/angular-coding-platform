@@ -13,6 +13,9 @@
             <mat-form-field appearance="outline">
                 <mat-label>Enter your password</mat-label>
                 <input type="password" matInput formControlName="password" >
+                <mat-error *ngIf="loginForm.controls.email.invalid">
+                    {{loginForm.controls.password.hasError('required')?'Password is required' : 'Password should be atleast 6 characters long'}}
+                </mat-error>            
             </mat-form-field>
         </form>
         <div class="buttons-container">
